@@ -2,7 +2,13 @@
 Injection of objects (less dependency)
 We are working with classes Barcelona and RealMadrid. These classes implements an interface Team:
 
-
+Dependency:
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context</artifactId>
+		<version>5.2.5.RELEASE</version>
+	</dependency>
+		
 My bean configuration is such that we use references between objects:
 
 	<bean id="myPerson" class="com.eflu.di.objects.Person">
