@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="myPerson" class="com.eflu.di.objects.Person">
+		<property name="country" ref="myCountry"></property>
+		<property name="id" value="1"></property>
+		<property name="name" value="Edgar"></property>
+		<property name="nickName" value="chano"></property>
+		<property name="team" ref="team"></property>
+	</bean>
+
+	<bean id="myCountry" class="com.eflu.di.objects.Country">
+		<property name="name" value="Peru"></property>
+	</bean>
+
+	<bean id="team" class="com.eflu.di.objects.Barcelona">
+		<property name="name" value="Barcelona"></property>
+	</bean>
+
+</beans>
